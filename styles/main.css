@@ -1,0 +1,120 @@
+.dash {
+    border: black solid 1px;
+    width: 31px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    padding-top: 23px;
+}
+
+main .entenda {
+    height: 100%;
+    padding: 40px;
+    background-color: var(--bg-light);
+}
+
+main .entenda .content {
+    padding-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+main .entenda p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+main .entenda p:nth-last-child(1) {
+    padding-top: 51px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+main .entenda img {
+    width: 591px;
+    height: 346px;
+}
+
+main .metas {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--bg-grey);
+}
+
+main .metas img {
+    width: 335px;
+    height: 294px;
+    padding: 20px;
+}
+
+main .metas p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+main .metas p:nth-child(2) {
+    margin-left: 10%;
+}
+
+main .equipe {
+    height: 100%;
+    padding: 40px;
+    background-color: var(--bg-light);
+}
+
+main .equipe p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+main .equipe img {
+    width: 128px;
+    height: 128px;
+}
+
+main .equipe .card {
+    justify-content: center;
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+main .equipe .card div {
+    background-color: #EEECEC;
+    width: 425px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .equipe ul {
+    gap: 5px;
+    display: flex;
+    padding: 40px;
+}
+
+main .equipe li img {
+    width: 90px;
+    height: 90px;
+
+}
+
+main .faleConosco {
+    min-height: 411px;
+    padding: 40px;
+    background-color: var(--bg-grey);
+}
+
+main .faleConosco p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
