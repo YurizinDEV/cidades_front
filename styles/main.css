@@ -13,11 +13,13 @@ main .entenda {
     height: 100%;
     padding: 40px;
     background-color: var(--bg-light);
+    overflow-x: hidden;
 }
 
 main .entenda .content {
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -32,41 +34,62 @@ main .entenda p:nth-last-child(1) {
     font-size: 18px;
     font-weight: 400;
     padding-bottom: 2px;
+    max-width: 100%;
+}
+
+main .entenda .content p {
+    flex: 1;
+    min-width: 300px;
 }
 
 main .entenda img {
-    width: 591px;
-    height: 346px;
+    max-width: 591px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
 }
 
 main .metas {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 100%;
     padding: 40px;
     background-color: var(--bg-grey);
+    overflow-x: hidden;
+}
+
+main .metas > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
 }
 
 main .metas img {
     width: 335px;
     height: 294px;
     padding: 20px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 main .metas p {
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 2px;
+    width: 100%;
 }
 
-main .metas p:nth-child(2) {
-    margin-left: 10%;
+main .metas p:nth-last-child(1) {
+    text-align: center;
+    margin-top: 20px;
 }
 
 main .equipe {
     height: 100%;
     padding: 40px;
     background-color: var(--bg-light);
+    overflow-x: hidden;
 }
 
 main .equipe p:nth-child(1) {
@@ -84,21 +107,33 @@ main .equipe .card {
     justify-content: center;
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 main .equipe .card div {
     background-color: #EEECEC;
     width: 425px;
+    max-width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 10px;
+}
+
+main .equipe .cardtxt {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 143px); /* Subtracted image width + gap */
 }
 
 main .equipe ul {
-    gap: 5px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 40px;
+    gap: 5px;
+    max-width: 100%;
 }
 
 main .equipe li img {

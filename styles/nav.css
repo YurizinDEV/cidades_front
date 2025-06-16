@@ -1,12 +1,19 @@
-nav{
+nav {
     color: var(--nav-text-color);
     background-color: var(--nav-bg-color);
-    align-content: center;
     height: 55px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-ul{
+ul {
     padding-left: 20px;
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 5px 0;
 }

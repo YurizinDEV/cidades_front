@@ -6,6 +6,11 @@
   font-family: var(--primary-font);
 }
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
 
 .inter-default {
   font-family: "Inter", sans-serif;
